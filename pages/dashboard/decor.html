@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decor Choices | Client Dashboard</title>
+  <meta name="description" content="Review your wedding decor: colour palette, mood boards, florals, lighting, tables and stage options. Approve each item, request a change or leave a comment.">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- TODO: replace https://www.example.com with your domain in canonical, Open Graph and JSON-LD -->
+  <link rel="canonical" href="https://www.example.com/pages/dashboard/decor.html">
+  <meta name="theme-color" content="#9b4d5e">
+  <meta name="author" content="Everbloom Weddings">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Everbloom Weddings">
+  <meta property="og:title" content="Decor Choices | Client Dashboard">
+  <meta property="og:description" content="Review your wedding decor: colour palette, mood boards, florals, lighting, tables and stage options. Approve each item, request a change or leave a comment.">
+  <meta property="og:url" content="https://www.example.com/pages/dashboard/decor.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Decor Choices | Client Dashboard">
+  <meta name="twitter:description" content="Review your wedding decor: colour palette, mood boards, florals, lighting, tables and stage options. Approve each item, request a change or leave a comment.">
+  <meta name="twitter:image" content="https://www.example.com/assets/images/og-image.jpg">
+
+  <!-- Favicons (TODO: replace with your own) -->
+  <link rel="icon" href="../../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+  <!-- Performance: preconnect to font, CDN and image hosts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- Fonts: Cormorant Garamond (headings) + Jost (body), loaded once -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Jost:wght@400;500;600&amp;display=swap">
+
+  <!-- Bootstrap 5.3.3 + Bootstrap Icons 1.11.3 (version-pinned). main.js swaps to the RTL build. -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Template styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../../assets/css/rtl.css">
+
+  <!-- Apply saved theme / direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,s=localStorage,t=s.getItem('wt-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');d.setAttribute('data-theme',t);d.setAttribute('data-bs-theme',t);if(s.getItem('wt-dir')==='rtl'){d.setAttribute('dir','rtl');var b=document.getElementById('bootstrap-css');if(b){b.href=b.href.replace('bootstrap.min.css','bootstrap.rtl.min.css');}}if(s.getItem('wt-sidebar')==='collapsed'){d.classList.add('sidebar-collapsed');}}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="dash">
+  <!-- ============================== SIDEBAR ============================== -->
+  <aside class="dash-sidebar" id="dash-sidebar" aria-label="Dashboard navigation">
+    <div class="dash-brand">
+      <a href="dashboard.html" class="brand-full"><img class="logo-light" src="../../assets/images/logo-light.png" width="760" height="479" alt="Everbloom Weddings home"><img class="logo-dark" src="../../assets/images/logo-dark.png" width="760" height="479" alt="Everbloom Weddings home"></a>
+      <a href="dashboard.html" class="brand-mark-link" aria-label="Dashboard overview"><img class="brand-mark" src="../../assets/images/favicon.svg" width="36" height="36" alt=""></a>
+      <button type="button" class="icon-btn dash-close d-lg-none" aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+    </div>
+    <nav aria-label="Dashboard">
+      <p class="dash-nav-label">Planning</p>
+      <ul class="dash-nav"><li><a href="dashboard.html" title="Overview"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span>Overview</span></a></li><li><a href="checklist.html" title="Checklist"><i class="bi bi-list-check" aria-hidden="true"></i><span>Checklist</span></a></li><li><a href="vendors.html" title="Vendors"><i class="bi bi-shop" aria-hidden="true"></i><span>Vendors</span></a></li><li><a href="decor.html" aria-current="page" title="Decor"><i class="bi bi-palette" aria-hidden="true"></i><span>Decor</span></a></li><li><a href="budget.html" title="Budget"><i class="bi bi-pie-chart" aria-hidden="true"></i><span>Budget</span></a></li><li><a href="payments.html" title="Payments"><i class="bi bi-credit-card" aria-hidden="true"></i><span>Payments</span></a></li><li><a href="messages.html" title="Messages"><i class="bi bi-chat-heart" aria-hidden="true"></i><span>Messages</span></a></li><li><a href="documents.html" title="Documents"><i class="bi bi-folder2-open" aria-hidden="true"></i><span>Documents</span></a></li><li><a href="settings.html" title="Settings"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul>
+    </nav>
+    <div class="dash-sidebar-foot">
+      <ul class="dash-nav p-0">
+        <li><a href="../index.html" title="Back to website"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span>Back to website</span></a></li>
+        <li><a href="../login.html" title="Log out"><i class="bi bi-box-arrow-right" aria-hidden="true"></i><span>Log out</span></a></li>
+      </ul>
+    </div>
+  </aside>
+  <div class="dash-backdrop" id="dash-backdrop" hidden></div>
+
+  <div class="dash-main">
+    <!-- ============================== TOP BAR ============================== -->
+    <header class="dash-topbar">
+      <button type="button" class="icon-btn js-sidebar-toggle" aria-controls="dash-sidebar" aria-expanded="true" aria-label="Collapse navigation"><i class="bi bi-layout-sidebar-inset" aria-hidden="true"></i></button>
+      <h1>Decor choices</h1>
+      <div class="dash-tools">
+        <button type="button" class="icon-btn js-theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i><span class="tool-label">Dark mode</span></button>
+        <button type="button" class="icon-btn hide-sm js-dir-toggle" aria-pressed="false" aria-label="Switch to right-to-left layout"><i class="bi bi-translate" aria-hidden="true"></i><span class="tool-label">RTL layout</span></button>
+        <div class="dropdown">
+          <button type="button" class="icon-btn position-relative" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications, 3 unread">
+            <i class="bi bi-bell" aria-hidden="true"></i><span class="notif-dot"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <!-- TODO: dummy notifications -->
+            <p class="dropdown-header">Notifications</p>
+            <a class="dropdown-item" href="payments.html"><i class="bi bi-credit-card text-primary-brand" aria-hidden="true"></i>Installment 3 is due on 15 Dec</a>
+            <a class="dropdown-item" href="decor.html"><i class="bi bi-palette text-primary-brand" aria-hidden="true"></i>New stage concept ready to review</a>
+            <a class="dropdown-item" href="messages.html"><i class="bi bi-chat-heart text-primary-brand" aria-hidden="true"></i>Your planner sent a message</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="messages.html#notifications">View all notifications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="profile-btn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu for Aisha and Rohan">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=120&amp;q=70" width="80" height="80" alt="" class="avatar" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/portrait-04.jpg'"><span class="profile-name">Aisha &amp; Rohan</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="settings.html"><i class="bi bi-person" aria-hidden="true"></i>Profile &amp; settings</a>
+            <a class="dropdown-item" href="documents.html"><i class="bi bi-folder2-open" aria-hidden="true"></i>Documents</a>
+            <a class="dropdown-item" href="../index.html"><i class="bi bi-house" aria-hidden="true"></i>Visit website</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="../login.html"><i class="bi bi-box-arrow-right" aria-hidden="true"></i>Log out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="dash-content" tabindex="-1">
+      <!-- NOTE: all figures, names and dates below are DUMMY DATA. TODO: load from your backend. -->
+
+      <!-- TODO: dummy decor items -->
+      <div class="dash-grid">
+        <section class="card-box no-hover dash-card" aria-labelledby="palette-title">
+          <div class="dash-card-head"><h2 id="palette-title">Colour palette</h2><span class="badge-soft badge-status is-success">Approved</span></div>
+          <div class="swatches"><div class="swatch"><i style="background:#9b4d5e" aria-hidden="true"></i><span>Rose<br>#9b4d5e</span></div><div class="swatch"><i style="background:#f3d9d3" aria-hidden="true"></i><span>Blush<br>#f3d9d3</span></div><div class="swatch"><i style="background:#c9a46a" aria-hidden="true"></i><span>Champagne<br>#c9a46a</span></div><div class="swatch"><i style="background:#5e7a6a" aria-hidden="true"></i><span>Sage<br>#5e7a6a</span></div><div class="swatch"><i style="background:#fffaf6" aria-hidden="true"></i><span>Ivory<br>#fffaf6</span></div></div>
+        </section>
+        <div class="dash-grid halves">
+        <article class="card-box no-hover dash-card js-decision" aria-labelledby="mb1-t">
+          <div class="dash-card-head"><h2 id="mb1-t">Ceremony mood board</h2><span class="badge-soft badge-status js-status is-info">Awaiting review</span></div>
+          <div class="moodboard mb-3"><img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&amp;fit=crop&amp;w=500&amp;q=70" width="400" height="400" alt="Ceremony mood board inspiration image" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-10.jpg'"><img src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&amp;fit=crop&amp;w=500&amp;q=70" width="400" height="400" alt="Ceremony mood board inspiration image" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-06.jpg'"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&amp;fit=crop&amp;w=500&amp;q=70" width="400" height="400" alt="Ceremony mood board inspiration image" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-02.jpg'"></div>
+          <p class="text-muted">Soft, airy and floral-led.</p>
+          <div class="action-row">
+            <button type="button" class="btn btn-sm btn-sage" data-action="approve"><i class="bi bi-check2" aria-hidden="true"></i>Approve</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-action="change"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Request change</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-bs-toggle="collapse" data-bs-target="#mb1-c" aria-expanded="false" aria-controls="mb1-c"><i class="bi bi-chat" aria-hidden="true"></i>Comment</button>
+          </div>
+          <div class="collapse" id="mb1-c">
+            <form class="js-comment-form mt-3" data-list="mb1-list" novalidate>
+              <label class="form-label" for="mb1-input">Your comment</label>
+              <textarea class="form-control" id="mb1-input" rows="2" style="min-height:80px"></textarea>
+              <button class="btn btn-sm mt-2" type="submit">Add comment</button>
+            </form>
+          </div>
+          <ul class="comment-list" id="mb1-list"></ul>
+        </article>
+        <article class="card-box no-hover dash-card js-decision" aria-labelledby="mb2-t">
+          <div class="dash-card-head"><h2 id="mb2-t">Reception mood board</h2><span class="badge-soft badge-status js-status is-info">Awaiting review</span></div>
+          <div class="moodboard mb-3"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&amp;fit=crop&amp;w=500&amp;q=70" width="400" height="400" alt="Reception mood board inspiration image" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-02.jpg'"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&amp;fit=crop&amp;w=500&amp;q=70" width="400" height="400" alt="Reception mood board inspiration image" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-04.jpg'"><img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&amp;fit=crop&amp;w=500&amp;q=70" width="400" height="400" alt="Reception mood board inspiration image" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-03.jpg'"></div>
+          <p class="text-muted">Candlelight, gold accents and long tables.</p>
+          <div class="action-row">
+            <button type="button" class="btn btn-sm btn-sage" data-action="approve"><i class="bi bi-check2" aria-hidden="true"></i>Approve</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-action="change"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Request change</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-bs-toggle="collapse" data-bs-target="#mb2-c" aria-expanded="false" aria-controls="mb2-c"><i class="bi bi-chat" aria-hidden="true"></i>Comment</button>
+          </div>
+          <div class="collapse" id="mb2-c">
+            <form class="js-comment-form mt-3" data-list="mb2-list" novalidate>
+              <label class="form-label" for="mb2-input">Your comment</label>
+              <textarea class="form-control" id="mb2-input" rows="2" style="min-height:80px"></textarea>
+              <button class="btn btn-sm mt-2" type="submit">Add comment</button>
+            </form>
+          </div>
+          <ul class="comment-list" id="mb2-list"></ul>
+        </article>
+        </div>
+        <div class="dash-grid halves">
+        <article class="card-box no-hover dash-card js-decision" aria-labelledby="opt1-t">
+          <div class="card-media frame mb-3"><img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&amp;fit=crop&amp;w=700&amp;q=70" width="600" height="450" alt="Floral: bridal bouquet" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-08.jpg'"></div>
+          <div class="dash-card-head"><h2 id="opt1-t">Floral: bridal bouquet</h2><span class="badge-soft badge-status js-status is-success">Approved</span></div>
+          <p class="text-muted">Garden roses, ranunculus and trailing greenery.</p>
+          <div class="action-row">
+            <button type="button" class="btn btn-sm btn-sage" data-action="approve"><i class="bi bi-check2" aria-hidden="true"></i>Approve</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-action="change"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Request change</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-bs-toggle="collapse" data-bs-target="#opt1-c" aria-expanded="false" aria-controls="opt1-c"><i class="bi bi-chat" aria-hidden="true"></i>Comment</button>
+          </div>
+          <div class="collapse" id="opt1-c">
+            <form class="js-comment-form mt-3" data-list="opt1-list" novalidate>
+              <label class="form-label" for="opt1-input">Your comment</label>
+              <textarea class="form-control" id="opt1-input" rows="2" style="min-height:80px"></textarea>
+              <button class="btn btn-sm mt-2" type="submit">Add comment</button>
+            </form>
+          </div>
+          <ul class="comment-list" id="opt1-list"></ul>
+        </article>
+        <article class="card-box no-hover dash-card js-decision" aria-labelledby="opt2-t">
+          <div class="card-media frame mb-3"><img src="https://images.unsplash.com/photo-1470290378698-263fa7ca60ab?auto=format&amp;fit=crop&amp;w=700&amp;q=70" width="600" height="450" alt="Lighting: warm festoons" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-12.jpg'"></div>
+          <div class="dash-card-head"><h2 id="opt2-t">Lighting: warm festoons</h2><span class="badge-soft badge-status js-status is-info">Awaiting review</span></div>
+          <p class="text-muted">Festoon canopy over the lawn plus candle clusters.</p>
+          <div class="action-row">
+            <button type="button" class="btn btn-sm btn-sage" data-action="approve"><i class="bi bi-check2" aria-hidden="true"></i>Approve</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-action="change"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Request change</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-bs-toggle="collapse" data-bs-target="#opt2-c" aria-expanded="false" aria-controls="opt2-c"><i class="bi bi-chat" aria-hidden="true"></i>Comment</button>
+          </div>
+          <div class="collapse" id="opt2-c">
+            <form class="js-comment-form mt-3" data-list="opt2-list" novalidate>
+              <label class="form-label" for="opt2-input">Your comment</label>
+              <textarea class="form-control" id="opt2-input" rows="2" style="min-height:80px"></textarea>
+              <button class="btn btn-sm mt-2" type="submit">Add comment</button>
+            </form>
+          </div>
+          <ul class="comment-list" id="opt2-list"></ul>
+        </article>
+        <article class="card-box no-hover dash-card js-decision" aria-labelledby="opt3-t">
+          <div class="card-media frame mb-3"><img src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?auto=format&amp;fit=crop&amp;w=700&amp;q=70" width="600" height="450" alt="Tables: gold-rimmed settings" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-05.jpg'"></div>
+          <div class="dash-card-head"><h2 id="opt3-t">Tables: gold-rimmed settings</h2><span class="badge-soft badge-status js-status is-warning">Change requested</span></div>
+          <p class="text-muted">Ivory linen, gold chargers and low centrepieces.</p>
+          <div class="action-row">
+            <button type="button" class="btn btn-sm btn-sage" data-action="approve"><i class="bi bi-check2" aria-hidden="true"></i>Approve</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-action="change"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Request change</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-bs-toggle="collapse" data-bs-target="#opt3-c" aria-expanded="false" aria-controls="opt3-c"><i class="bi bi-chat" aria-hidden="true"></i>Comment</button>
+          </div>
+          <div class="collapse" id="opt3-c">
+            <form class="js-comment-form mt-3" data-list="opt3-list" novalidate>
+              <label class="form-label" for="opt3-input">Your comment</label>
+              <textarea class="form-control" id="opt3-input" rows="2" style="min-height:80px"></textarea>
+              <button class="btn btn-sm mt-2" type="submit">Add comment</button>
+            </form>
+          </div>
+          <ul class="comment-list" id="opt3-list"></ul>
+        </article>
+        <article class="card-box no-hover dash-card js-decision" aria-labelledby="opt4-t">
+          <div class="card-media frame mb-3"><img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&amp;fit=crop&amp;w=700&amp;q=70" width="600" height="450" alt="Stage: floral mandap" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/wedding-10.jpg'"></div>
+          <div class="dash-card-head"><h2 id="opt4-t">Stage: floral mandap</h2><span class="badge-soft badge-status js-status is-info">Awaiting review</span></div>
+          <p class="text-muted">Four-pillar mandap with marigold and rose canopy.</p>
+          <div class="action-row">
+            <button type="button" class="btn btn-sm btn-sage" data-action="approve"><i class="bi bi-check2" aria-hidden="true"></i>Approve</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-action="change"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Request change</button>
+            <button type="button" class="btn btn-sm btn-ghost" data-bs-toggle="collapse" data-bs-target="#opt4-c" aria-expanded="false" aria-controls="opt4-c"><i class="bi bi-chat" aria-hidden="true"></i>Comment</button>
+          </div>
+          <div class="collapse" id="opt4-c">
+            <form class="js-comment-form mt-3" data-list="opt4-list" novalidate>
+              <label class="form-label" for="opt4-input">Your comment</label>
+              <textarea class="form-control" id="opt4-input" rows="2" style="min-height:80px"></textarea>
+              <button class="btn btn-sm mt-2" type="submit">Add comment</button>
+            </form>
+          </div>
+          <ul class="comment-list" id="opt4-list"></ul>
+        </article>
+        </div>
+      </div>
+    </main>
+    <footer class="dash-footer">
+      <span>&copy; <span data-year>2026</span> Everbloom Weddings · Client dashboard (demo data)</span>
+      <span>Need help? <a href="messages.html">Message your planner</a></span>
+    </footer>
+  </div>
+</div>
+<p class="visually-hidden" id="dash-live" aria-live="polite"></p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/dashboard.js" defer></script>
+</body>
+</html>

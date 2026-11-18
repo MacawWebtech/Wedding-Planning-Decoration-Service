@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wedding Budget | Client Dashboard</title>
+  <meta name="description" content="Track your wedding budget: total, spent and remaining, category breakdown with planned versus actual figures, and clear doughnut and bar charts of spending.">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- TODO: replace https://www.example.com with your domain in canonical, Open Graph and JSON-LD -->
+  <link rel="canonical" href="https://www.example.com/pages/dashboard/budget.html">
+  <meta name="theme-color" content="#9b4d5e">
+  <meta name="author" content="Everbloom Weddings">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Everbloom Weddings">
+  <meta property="og:title" content="Wedding Budget | Client Dashboard">
+  <meta property="og:description" content="Track your wedding budget: total, spent and remaining, category breakdown with planned versus actual figures, and clear doughnut and bar charts of spending.">
+  <meta property="og:url" content="https://www.example.com/pages/dashboard/budget.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wedding Budget | Client Dashboard">
+  <meta name="twitter:description" content="Track your wedding budget: total, spent and remaining, category breakdown with planned versus actual figures, and clear doughnut and bar charts of spending.">
+  <meta name="twitter:image" content="https://www.example.com/assets/images/og-image.jpg">
+
+  <!-- Favicons (TODO: replace with your own) -->
+  <link rel="icon" href="../../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+  <!-- Performance: preconnect to font, CDN and image hosts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- Fonts: Cormorant Garamond (headings) + Jost (body), loaded once -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Jost:wght@400;500;600&amp;display=swap">
+
+  <!-- Bootstrap 5.3.3 + Bootstrap Icons 1.11.3 (version-pinned). main.js swaps to the RTL build. -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Template styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../../assets/css/rtl.css">
+
+  <!-- Apply saved theme / direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,s=localStorage,t=s.getItem('wt-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');d.setAttribute('data-theme',t);d.setAttribute('data-bs-theme',t);if(s.getItem('wt-dir')==='rtl'){d.setAttribute('dir','rtl');var b=document.getElementById('bootstrap-css');if(b){b.href=b.href.replace('bootstrap.min.css','bootstrap.rtl.min.css');}}if(s.getItem('wt-sidebar')==='collapsed'){d.classList.add('sidebar-collapsed');}}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="dash">
+  <!-- ============================== SIDEBAR ============================== -->
+  <aside class="dash-sidebar" id="dash-sidebar" aria-label="Dashboard navigation">
+    <div class="dash-brand">
+      <a href="dashboard.html" class="brand-full"><img class="logo-light" src="../../assets/images/logo-light.png" width="760" height="479" alt="Everbloom Weddings home"><img class="logo-dark" src="../../assets/images/logo-dark.png" width="760" height="479" alt="Everbloom Weddings home"></a>
+      <a href="dashboard.html" class="brand-mark-link" aria-label="Dashboard overview"><img class="brand-mark" src="../../assets/images/favicon.svg" width="36" height="36" alt=""></a>
+      <button type="button" class="icon-btn dash-close d-lg-none" aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+    </div>
+    <nav aria-label="Dashboard">
+      <p class="dash-nav-label">Planning</p>
+      <ul class="dash-nav"><li><a href="dashboard.html" title="Overview"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span>Overview</span></a></li><li><a href="checklist.html" title="Checklist"><i class="bi bi-list-check" aria-hidden="true"></i><span>Checklist</span></a></li><li><a href="vendors.html" title="Vendors"><i class="bi bi-shop" aria-hidden="true"></i><span>Vendors</span></a></li><li><a href="decor.html" title="Decor"><i class="bi bi-palette" aria-hidden="true"></i><span>Decor</span></a></li><li><a href="budget.html" aria-current="page" title="Budget"><i class="bi bi-pie-chart" aria-hidden="true"></i><span>Budget</span></a></li><li><a href="payments.html" title="Payments"><i class="bi bi-credit-card" aria-hidden="true"></i><span>Payments</span></a></li><li><a href="messages.html" title="Messages"><i class="bi bi-chat-heart" aria-hidden="true"></i><span>Messages</span></a></li><li><a href="documents.html" title="Documents"><i class="bi bi-folder2-open" aria-hidden="true"></i><span>Documents</span></a></li><li><a href="settings.html" title="Settings"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul>
+    </nav>
+    <div class="dash-sidebar-foot">
+      <ul class="dash-nav p-0">
+        <li><a href="../index.html" title="Back to website"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span>Back to website</span></a></li>
+        <li><a href="../login.html" title="Log out"><i class="bi bi-box-arrow-right" aria-hidden="true"></i><span>Log out</span></a></li>
+      </ul>
+    </div>
+  </aside>
+  <div class="dash-backdrop" id="dash-backdrop" hidden></div>
+
+  <div class="dash-main">
+    <!-- ============================== TOP BAR ============================== -->
+    <header class="dash-topbar">
+      <button type="button" class="icon-btn js-sidebar-toggle" aria-controls="dash-sidebar" aria-expanded="true" aria-label="Collapse navigation"><i class="bi bi-layout-sidebar-inset" aria-hidden="true"></i></button>
+      <h1>Budget</h1>
+      <div class="dash-tools">
+        <button type="button" class="icon-btn js-theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i><span class="tool-label">Dark mode</span></button>
+        <button type="button" class="icon-btn hide-sm js-dir-toggle" aria-pressed="false" aria-label="Switch to right-to-left layout"><i class="bi bi-translate" aria-hidden="true"></i><span class="tool-label">RTL layout</span></button>
+        <div class="dropdown">
+          <button type="button" class="icon-btn position-relative" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications, 3 unread">
+            <i class="bi bi-bell" aria-hidden="true"></i><span class="notif-dot"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <!-- TODO: dummy notifications -->
+            <p class="dropdown-header">Notifications</p>
+            <a class="dropdown-item" href="payments.html"><i class="bi bi-credit-card text-primary-brand" aria-hidden="true"></i>Installment 3 is due on 15 Dec</a>
+            <a class="dropdown-item" href="decor.html"><i class="bi bi-palette text-primary-brand" aria-hidden="true"></i>New stage concept ready to review</a>
+            <a class="dropdown-item" href="messages.html"><i class="bi bi-chat-heart text-primary-brand" aria-hidden="true"></i>Your planner sent a message</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="messages.html#notifications">View all notifications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="profile-btn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu for Aisha and Rohan">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=120&amp;q=70" width="80" height="80" alt="" class="avatar" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/portrait-04.jpg'"><span class="profile-name">Aisha &amp; Rohan</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="settings.html"><i class="bi bi-person" aria-hidden="true"></i>Profile &amp; settings</a>
+            <a class="dropdown-item" href="documents.html"><i class="bi bi-folder2-open" aria-hidden="true"></i>Documents</a>
+            <a class="dropdown-item" href="../index.html"><i class="bi bi-house" aria-hidden="true"></i>Visit website</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="../login.html"><i class="bi bi-box-arrow-right" aria-hidden="true"></i>Log out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="dash-content" tabindex="-1">
+      <!-- NOTE: all figures, names and dates below are DUMMY DATA. TODO: load from your backend. -->
+
+      <div class="dash-grid">
+        <div class="dash-grid kpis">
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle "><i class="bi bi-wallet2" aria-hidden="true"></i></span><div><p class="kpi-label">Total budget</p><p class="kpi-value">$48,000</p></div></div></div>
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle is-sage"><i class="bi bi-receipt" aria-hidden="true"></i></span><div><p class="kpi-label">Spent</p><p class="kpi-value">$25,350</p></div></div></div>
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle is-gold"><i class="bi bi-piggy-bank" aria-hidden="true"></i></span><div><p class="kpi-label">Remaining</p><p class="kpi-value">$22,650</p></div></div></div>
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle "><i class="bi bi-percent" aria-hidden="true"></i></span><div><p class="kpi-label">Budget used</p><p class="kpi-value">52.8%</p></div></div></div>
+        </div>
+        <div class="dash-grid two">
+          <section class="card-box no-hover dash-card" aria-labelledby="bar-title">
+            <div class="dash-card-head"><h2 id="bar-title">Planned vs actual</h2></div>
+            <div class="chart-box skeleton"><canvas data-chart="bar" data-source="#budget-table" role="img" aria-label="Bar chart comparing planned and actual spend per category; the same figures are in the table below"></canvas><p class="chart-fallback" hidden>Charts could not load. See the table below.</p></div>
+          </section>
+          <section class="card-box no-hover dash-card" aria-labelledby="dn-title">
+            <div class="dash-card-head"><h2 id="dn-title">Planned budget split</h2></div>
+            <div class="chart-box skeleton"><canvas data-chart="doughnut" data-field="planned" data-source="#budget-table" role="img" aria-label="Doughnut chart of the planned budget by category; the same figures are in the table below"></canvas><p class="chart-fallback" hidden>Charts could not load. See the table below.</p></div>
+          </section>
+        </div>
+        <section class="card-box no-hover dash-card" aria-labelledby="table-title">
+          <div class="dash-card-head"><h2 id="table-title">Category breakdown</h2><span class="small text-muted">Edit these rows to update the charts</span></div>
+          <!-- TODO: dummy budget data; charts read data-planned / data-actual from these rows -->
+          <div class="table-responsive">
+            <table class="table table-brand table-hover" id="budget-table">
+              <caption class="visually-hidden">Planned versus actual spend by category</caption>
+              <thead><tr><th scope="col">Category</th><th scope="col">Planned</th><th scope="col">Actual</th><th scope="col">Remaining</th><th scope="col" style="min-width:140px">Spent</th></tr></thead>
+              <tbody><tr data-category="Venue" data-planned="12000" data-actual="12000"><th scope="row">Venue</th><td>$12,000</td><td>$12,000</td><td>$0</td><td><div class="progress" role="progressbar" aria-label="Venue spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="progress-bar" style="width: 100%"></div></div></td></tr><tr data-category="Catering" data-planned="14000" data-actual="6500"><th scope="row">Catering</th><td>$14,000</td><td>$6,500</td><td>$7,500</td><td><div class="progress" role="progressbar" aria-label="Catering spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="46"><div class="progress-bar" style="width: 46%"></div></div></td></tr><tr data-category="Decor &amp; florals" data-planned="8000" data-actual="2400"><th scope="row">Decor &amp; florals</th><td>$8,000</td><td>$2,400</td><td>$5,600</td><td><div class="progress" role="progressbar" aria-label="Decor &amp; florals spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"><div class="progress-bar" style="width: 30%"></div></div></td></tr><tr data-category="Photography &amp; film" data-planned="5000" data-actual="1500"><th scope="row">Photography &amp; film</th><td>$5,000</td><td>$1,500</td><td>$3,500</td><td><div class="progress" role="progressbar" aria-label="Photography &amp; film spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"><div class="progress-bar" style="width: 30%"></div></div></td></tr><tr data-category="Attire &amp; beauty" data-planned="4000" data-actual="1800"><th scope="row">Attire &amp; beauty</th><td>$4,000</td><td>$1,800</td><td>$2,200</td><td><div class="progress" role="progressbar" aria-label="Attire &amp; beauty spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45"><div class="progress-bar" style="width: 45%"></div></div></td></tr><tr data-category="Entertainment" data-planned="2500" data-actual="800"><th scope="row">Entertainment</th><td>$2,500</td><td>$800</td><td>$1,700</td><td><div class="progress" role="progressbar" aria-label="Entertainment spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="32"><div class="progress-bar" style="width: 32%"></div></div></td></tr><tr data-category="Stationery" data-planned="1000" data-actual="350"><th scope="row">Stationery</th><td>$1,000</td><td>$350</td><td>$650</td><td><div class="progress" role="progressbar" aria-label="Stationery spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35"><div class="progress-bar" style="width: 35%"></div></div></td></tr><tr data-category="Contingency" data-planned="1500" data-actual="0"><th scope="row">Contingency</th><td>$1,500</td><td>$0</td><td>$1,500</td><td><div class="progress" role="progressbar" aria-label="Contingency spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" style="width: 0%"></div></div></td></tr></tbody>
+              <tfoot><tr><th scope="row">Total</th><td>$48,000</td><td>$25,350</td><td>$22,650</td><td>52.8%</td></tr></tfoot>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="dash-footer">
+      <span>&copy; <span data-year>2026</span> Everbloom Weddings · Client dashboard (demo data)</span>
+      <span>Need help? <a href="messages.html">Message your planner</a></span>
+    </footer>
+  </div>
+</div>
+<p class="visually-hidden" id="dash-live" aria-live="polite"></p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="../../assets/js/main.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+<script src="../../assets/js/dashboard.js" defer></script>
+</body>
+</html>

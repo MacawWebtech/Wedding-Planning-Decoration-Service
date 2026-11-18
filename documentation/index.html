@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documentation | Wedding Template</title>
+  <meta name="description" content="Documentation for the Wedding Template: installation, customisation, page structure, integrations, dark mode, RTL, accessibility, SEO and credits.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Jost:wght@400;500;600&amp;display=swap">
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <style>
+    .doc { max-width: 920px; margin-inline: auto; }
+    .doc h2 { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--color-border); font-size: var(--fs-h3); }
+    .doc h3 { font-size: var(--fs-h4); margin-top: 2rem; }
+    .doc pre { background: var(--color-surface); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); }
+    .doc code { color: var(--color-primary-strong); }
+    .doc .compare-table td, .doc .compare-table th { text-align: start; font-size: .92rem; }
+    .doc .compare-table thead th { font-family: var(--font-body); font-size: .85rem; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="../pages/index.html"><img class="logo-light" src="../assets/images/logo-light.png" width="760" height="479" alt="Everbloom Weddings home"></a><a class="btn btn-sm btn-outline" href="../pages/index.html">View the template</a></div></header>
+<main id="main" class="section" tabindex="-1">
+  <div class="container"><article class="doc">
+<h1 class="h2">Wedding Template — Wedding Planning &amp; Decoration Service</h1>
+<p><strong>Version 1.0.0</strong> · Bootstrap 5.3.3 · Bootstrap Icons 1.11.3 · Chart.js 4.4.1 (dashboard only) · Vanilla ES6+</p>
+<p>An elegant, full-width HTML template for wedding planners, decorators and day-of coordinators. It has 12 public pages and a 9-page client dashboard for couples. Dark mode, RTL and WCAG 2.1 AA patterns are built in.</p>
+<p>Placeholder brand: <strong>Everbloom Weddings</strong>. Search the project for <code>TODO</code> to find every customisation point.</p>
+<hr>
+<h2>1. Quick start</h2>
+<ol>
+<li>Unzip the folder.</li>
+<li>Open <code>pages/index.html</code> in a browser. A local server is better, because some browsers limit <code>file://</code> pages:
+   <code>bash
+   cd wedding-template
+   npx serve .          # or: python3 -m http.server 8080</code></li>
+<li>Visit <code>http://localhost:8080/pages/index.html</code>. The root <code>index.html</code> redirects there.</li>
+</ol>
+<p>There is no build step. Everything is plain HTML, CSS and JS.</p>
+<h2>2. Folder structure</h2>
+<pre><code>wedding-template/
+├── index.html                 Redirects to pages/index.html
+├── README.md · robots.txt · sitemap.xml
+├── assets/
+│   ├── css/  style.css (sections 01–27), dark-mode.css, rtl.css
+│   ├── js/   main.js, dashboard.js, plugins/ (booking.js, payments.js, gallery.js)
+│   ├── images/ logo-light.png, logo-dark.png, favicon.svg, favicon-32.png,
+│   │           apple-touch-icon.png, og-image.jpg/.webp, coming-soon.jpg/.webp,
+│   │           fallback/ (wedding-01…12 + portrait-01…04, JPG + WebP)
+│   ├── files/  sample-document.pdf (download placeholder)
+│   └── fonts/  (optional self-hosted fonts — see fonts/README.md)
+├── pages/
+│   ├── index.html, index-2.html, about.html, services.html, service-details.html,
+│   │   packages.html, gallery.html, real-weddings.html, contact.html,
+│   │   login.html, 404.html, coming-soon.html
+│   └── dashboard/ dashboard.html, checklist.html, vendors.html, decor.html,
+│                  budget.html, payments.html, messages.html, documents.html, settings.html
+└── documentation/index.html
+</code></pre>
+<h2>3. Customisation</h2>
+<h3>Colours, fonts and spacing</h3>
+<p>All theming lives in CSS variables at the top of <code>assets/css/style.css</code> (section 01). Dark-mode values live in <code>assets/css/dark-mode.css</code>.</p>
+<div class="compare-wrap mb-4"><table class="compare-table" style="min-width:600px">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Default</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--color-primary</code></td>
+<td><code>#9b4d5e</code></td>
+<td>Deep rose — buttons, links, accents</td>
+</tr>
+<tr>
+<td><code>--color-secondary</code></td>
+<td><code>#5e7a6a</code></td>
+<td>Sage</td>
+</tr>
+<tr>
+<td><code>--color-accent</code></td>
+<td><code>#c9a46a</code></td>
+<td>Champagne gold (decorative). Use <code>--color-accent-strong</code> for gold <strong>text</strong>.</td>
+</tr>
+<tr>
+<td><code>--color-bg</code> / <code>--color-surface</code></td>
+<td><code>#fffaf6</code> / <code>#fbf1ee</code></td>
+<td>Ivory page and blush surfaces</td>
+</tr>
+<tr>
+<td><code>--page-gutter</code></td>
+<td><code>clamp(1rem, 4.5vw, 5rem)</code></td>
+<td>Side padding of every full-width container</td>
+</tr>
+<tr>
+<td><code>--space-1</code> … <code>--space-10</code></td>
+<td><code>0.5rem</code> … <code>5rem</code></td>
+<td>8px spacing scale</td>
+</tr>
+<tr>
+<td><code>--chart-1</code> … <code>--chart-8</code></td>
+<td>validated palette</td>
+<td>Dashboard chart series colours</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Fonts:</strong> change the Google Fonts <code>&lt;link&gt;</code> in each page head and <code>--font-heading</code> / <code>--font-body</code>.</p>
+<h3>Logo</h3>
+<p>Replace <code>assets/images/logo-light.png</code> (dark text, for light backgrounds) and <code>logo-dark.png</code> (light text, for dark backgrounds and the footer). Keep the files about 190×48, or update the <code>width</code>/<code>height</code> attributes.</p>
+<h3>Content and grid cards</h3>
+<p>Every card (services, packages, gallery, team, testimonials, real weddings, vendors) is written <strong>directly in the HTML</strong>. To add one, copy an existing <code>&lt;article class="card-box …"&gt;</code> block and edit it. JavaScript only filters, shows and hides existing markup. It never generates cards.</p>
+<ul>
+<li><strong>Gallery:</strong> copy a <code>&lt;figure class="gallery-item" data-category="…"&gt;</code>. Categories: <code>ceremony reception floral stage table outdoor destination</code> (use more than one, separated by spaces).</li>
+<li><strong>Budget charts:</strong> the charts read <code>data-planned</code> / <code>data-actual</code> from the rows of <code>#budget-table</code>. Edit the table and the charts follow.</li>
+</ul>
+<h3>Images</h3>
+<p>Photos are hotlinked from Unsplash (<code>?auto=format&amp;fit=crop&amp;w=…&amp;q=70</code>). Every <code>&lt;img&gt;</code> has <code>width</code>, <code>height</code>, <code>alt</code>, <code>loading="lazy"</code> (except the hero) and an <code>onerror</code> fallback to a local image in <code>assets/images/fallback/</code>. Page banners layer a local fallback under the remote photo in CSS.</p>
+<p>For production, download your own photos, compress them (WebP + JPG) into <code>assets/images/</code> and update the <code>src</code> paths.</p>
+<h2>Page reference</h2>
+<div class="compare-wrap mb-4"><table class="compare-table" style="min-width:600px">
+<thead>
+<tr>
+<th>Page</th>
+<th>Purpose</th>
+<th>Key components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index.html</code></td>
+<td>Home 1</td>
+<td>Photo hero, real weddings, services, stats, packages, gallery strip + lightbox, testimonial slider, process, CTA, newsletter</td>
+</tr>
+<tr>
+<td><code>index-2.html</code></td>
+<td>Home 2</td>
+<td>Split hero with arch image, stats, featured real wedding, bento services, process, testimonial grid</td>
+</tr>
+<tr>
+<td><code>about.html</code></td>
+<td>Studio</td>
+<td>Story, values, journey timeline, team, press placeholders, testimonials</td>
+</tr>
+<tr>
+<td><code>services.html</code></td>
+<td>Services</td>
+<td>8 service cards, why-us cards, process</td>
+</tr>
+<tr>
+<td><code>service-details.html</code></td>
+<td>One service</td>
+<td>Overview, inclusions, summary card, process, gallery, FAQ accordion, related services</td>
+</tr>
+<tr>
+<td><code>packages.html</code></td>
+<td>Pricing</td>
+<td>4 tiers, comparison table, add-ons, payment plan, Stripe/PayPal buttons, FAQs</td>
+</tr>
+<tr>
+<td><code>gallery.html</code></td>
+<td>Gallery</td>
+<td>Filter buttons, masonry, lightbox (Esc / arrows / swipe)</td>
+</tr>
+<tr>
+<td><code>real-weddings.html</code></td>
+<td>Stories</td>
+<td>4 stories with couple, venue, style, guests, quote, photos</td>
+</tr>
+<tr>
+<td><code>contact.html</code></td>
+<td>Enquiry</td>
+<td>Validated form, honeypot, contact cards, map placeholder</td>
+</tr>
+<tr>
+<td><code>login.html</code></td>
+<td>Couples' portal</td>
+<td>Login / Register tabs, forgot password, remember me, show/hide password, strength meter</td>
+</tr>
+<tr>
+<td><code>404.html</code> / <code>coming-soon.html</code></td>
+<td>Utility</td>
+<td>Page search + quick links / countdown + email capture</td>
+</tr>
+<tr>
+<td><code>dashboard/*.html</code></td>
+<td>Client dashboard</td>
+<td>Sidebar + top bar shell, overview, checklist, vendors, decor, budget charts, payments, messages, documents, settings</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Editing the shared header and footer</h2>
+<p>The header and footer are identical on every public page. When you change one (for example a menu item, phone number or social link), use your editor's <strong>find &amp; replace across files</strong> in <code>/pages/</code> so all pages stay identical.</p>
+<ul>
+<li>Menu: <code>&lt;ul class="nav-menu"&gt;</code>. A drop-down is <code>&lt;li class="has-sub"&gt;</code> containing a <code>&lt;button class="nav-sub-toggle"&gt;</code> and a <code>&lt;ul class="sub-menu"&gt;</code>.</li>
+<li>Active page: add <code>aria-current="page"</code> to the matching link.</li>
+<li>Footer columns: <code>.footer-grid</code> (brand · quick links · contact · hours).</li>
+</ul>
+<h2>JavaScript modules</h2>
+<div class="compare-wrap mb-4"><table class="compare-table" style="min-width:600px">
+<thead>
+<tr>
+<th>File</th>
+<th>Modules (each has <code>init()</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>main.js</code></td>
+<td>Config, Theme, Direction, Nav, Reveal, Counters, Slider, Forms, Password, MapEmbed, Countdown, BackToTop, Skeletons, WhatsApp, PageSearch, BootstrapHelpers, Year</td>
+</tr>
+<tr>
+<td><code>dashboard.js</code></td>
+<td>Sidebar, ProgressRing, Charts, Checklist, Decisions, Messages</td>
+</tr>
+<tr>
+<td><code>plugins/gallery.js</code></td>
+<td>GalleryFilter, Lightbox</td>
+</tr>
+<tr>
+<td><code>plugins/booking.js</code></td>
+<td>BookingConfig, Booking</td>
+</tr>
+<tr>
+<td><code>plugins/payments.js</code></td>
+<td>PaymentConfig, Payments</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Counters:</strong> <code>&lt;span data-count="250" data-suffix="+"&gt;XX+&lt;/span&gt;</code> animates to 250+. Leave <code>data-count</code> empty to keep the XX placeholder. Do not publish numbers you cannot back up.</p>
+<h2>Breakpoints</h2>
+<p>Mobile &lt;640px · Tablet 640–1023px · Desktop 1024–1279px · Large ≥1280px. The hamburger menu shows below 1024px and opens as an overlay under the header.</p>
+<h2>4. Integrations (all marked with TODO)</h2>
+<div class="compare-wrap mb-4"><table class="compare-table" style="min-width:600px">
+<thead>
+<tr>
+<th>Integration</th>
+<th>Where</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Consultation form</td>
+<td><code>pages/contact.html</code></td>
+<td><strong>Formspree:</strong> set <code>action="https://formspree.io/f/YOUR_ID"</code>. <strong>Netlify:</strong> add <code>data-netlify="true"</code> to the form (name + hidden <code>form-name</code> + honeypot are already there).</td>
+</tr>
+<tr>
+<td>Newsletter</td>
+<td>Home pages, coming soon</td>
+<td>Set the form <code>action</code>, or <code>Config.newsletter.actionUrl</code> in <code>assets/js/main.js</code> (Mailchimp / ConvertKit).</td>
+</tr>
+<tr>
+<td>Google Map</td>
+<td><code>pages/contact.html</code></td>
+<td>Set <code>Config.mapEmbedUrl</code> in <code>main.js</code>. While it is empty, a friendly placeholder shows.</td>
+</tr>
+<tr>
+<td>Booking calendar</td>
+<td><code>assets/js/plugins/booking.js</code></td>
+<td>Set <code>BookingConfig.url</code> (Calendly or Google Calendar). Elements with <code>[data-booking]</code> stay hidden until it is set.</td>
+</tr>
+<tr>
+<td>Payments</td>
+<td><code>assets/js/plugins/payments.js</code></td>
+<td>Paste Stripe Payment Links into <code>stripeLinks</code> and your PayPal.Me username into <code>paypalMe</code>. Unconfigured buttons show an honest "not connected yet" notice.</td>
+</tr>
+<tr>
+<td>WhatsApp</td>
+<td><code>main.js</code></td>
+<td>Set <code>Config.whatsappNumber</code> (digits only). Leave it empty to hide WhatsApp links.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Until an endpoint is set, forms validate and then show a <strong>"not connected yet"</strong> notice. They never pretend a message was sent.</p>
+<h2>5. Dark mode &amp; RTL</h2>
+<ul>
+<li><strong>Theme:</strong> saved in <code>localStorage</code> (<code>wt-theme</code>). With no saved choice it follows <code>prefers-color-scheme</code>. A small inline script in <code>&lt;head&gt;</code> applies it before first paint.</li>
+<li><strong>RTL:</strong> the toggle sets <code>dir="rtl"</code> (<code>wt-dir</code>) and swaps Bootstrap to <code>bootstrap.rtl.min.css</code>. The layout uses logical properties, and <code>rtl.css</code> flips arrows, sub-menus and the sidebar.</li>
+<li><strong>Dashboard sidebar</strong> collapse state is stored as <code>wt-sidebar</code>.</li>
+</ul>
+<h2>6. Accessibility</h2>
+<p>Skip link, landmarks, one <code>&lt;h1&gt;</code> per page, visible focus rings, a keyboard-operable menu, accordion, tabs and lightbox (Esc, arrows, focus trap), <code>aria-live</code> form messages, <code>aria-invalid</code> inline errors, 44px touch targets and <code>prefers-reduced-motion</code> support. Content stays visible without JavaScript, because scroll reveal only activates once JS adds <code>.reveal-ready</code>.</p>
+<h2>7. SEO</h2>
+<p>Each page has a unique title (≤60 characters) and meta description (150–160 characters), a canonical URL, and Open Graph and Twitter tags. JSON-LD: LocalBusiness/EventPlanner (Home, Home 2, Contact), FAQPage (Service details, Packages) and BreadcrumbList (inner pages). Dashboard, login, 404 and coming-soon pages are <code>noindex</code>. <strong>Replace <code>https://www.example.com</code></strong> in pages, <code>sitemap.xml</code> and <code>robots.txt</code>.</p>
+<h2>8. Production notes (minify)</h2>
+<pre><code class="language-bash">npx lightningcss --minify assets/css/style.css -o assets/css/style.min.css
+npx lightningcss --minify assets/css/dark-mode.css -o assets/css/dark-mode.min.css
+npx lightningcss --minify assets/css/rtl.css -o assets/css/rtl.min.css
+npx terser assets/js/main.js -c -m -o assets/js/main.min.js
+npx terser assets/js/dashboard.js -c -m -o assets/js/dashboard.min.js
+</code></pre>
+<p>Then point the <code>&lt;link&gt;</code>/<code>&lt;script&gt;</code> tags at the <code>.min</code> files. Also consider:
+- adding Subresource Integrity (<code>integrity</code> + <code>crossorigin</code>) to the CDN tags (copy hashes from jsdelivr / cdnjs);
+- self-hosting fonts (see <code>assets/fonts/README.md</code>);
+- serving your own compressed images instead of hotlinking.</p>
+<h2>9. Security</h2>
+<ul>
+<li>External links use <code>rel="noopener"</code>.</li>
+<li>No secrets are stored in front-end code. Stripe Payment Links and PayPal.Me URLs are public by design.</li>
+<li><strong>Login, register, settings, chat and checklist are front-end demos only.</strong> They do not authenticate, store or send data. Connect a real backend (your server, Firebase Auth, Supabase, Auth0…) before using them with real clients, and protect <code>/pages/dashboard/</code> behind authentication.</li>
+</ul>
+<h2>10. Credits</h2>
+<ul>
+<li><a href="https://getbootstrap.com">Bootstrap 5.3.3</a> — MIT</li>
+<li><a href="https://icons.getbootstrap.com">Bootstrap Icons 1.11.3</a> — MIT</li>
+<li><a href="https://www.chartjs.org">Chart.js 4.4.1</a> — MIT (via cdnjs)</li>
+<li><a href="https://fonts.google.com">Google Fonts</a>: Cormorant Garamond, Jost — SIL Open Font License</li>
+<li>Photos: <a href="https://unsplash.com">Unsplash</a> — Unsplash License (hotlinked demo images; check each photo and replace with your own)</li>
+<li>Logo, favicon, fallback images and the sample PDF were created for this template.</li>
+</ul>
+<h2>11. Changelog</h2>
+<p><strong>v1.0.0</strong> — Initial release: 12 public pages, 9 dashboard pages, dark mode, RTL, integrations, documentation.</p>
+<h2>12. Support</h2>
+<p>Read <code>documentation/index.html</code> first. For help, email <code>support@example.com</code> (TODO: your support address) with your template version, browser and a short description or screenshot.</p>
+  </article></div>
+</main>
+</body>
+</html>

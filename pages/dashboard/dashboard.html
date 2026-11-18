@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Dashboard | Everbloom Weddings</title>
+  <meta name="description" content="Your wedding planning overview: countdown, checklist progress, budget summary, next payment due, upcoming appointments, recent messages and quick actions.">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- TODO: replace https://www.example.com with your domain in canonical, Open Graph and JSON-LD -->
+  <link rel="canonical" href="https://www.example.com/pages/dashboard/dashboard.html">
+  <meta name="theme-color" content="#9b4d5e">
+  <meta name="author" content="Everbloom Weddings">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Everbloom Weddings">
+  <meta property="og:title" content="Client Dashboard | Everbloom Weddings">
+  <meta property="og:description" content="Your wedding planning overview: countdown, checklist progress, budget summary, next payment due, upcoming appointments, recent messages and quick actions.">
+  <meta property="og:url" content="https://www.example.com/pages/dashboard/dashboard.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Client Dashboard | Everbloom Weddings">
+  <meta name="twitter:description" content="Your wedding planning overview: countdown, checklist progress, budget summary, next payment due, upcoming appointments, recent messages and quick actions.">
+  <meta name="twitter:image" content="https://www.example.com/assets/images/og-image.jpg">
+
+  <!-- Favicons (TODO: replace with your own) -->
+  <link rel="icon" href="../../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+  <!-- Performance: preconnect to font, CDN and image hosts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- Fonts: Cormorant Garamond (headings) + Jost (body), loaded once -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Jost:wght@400;500;600&amp;display=swap">
+
+  <!-- Bootstrap 5.3.3 + Bootstrap Icons 1.11.3 (version-pinned). main.js swaps to the RTL build. -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Template styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../../assets/css/rtl.css">
+
+  <!-- Apply saved theme / direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,s=localStorage,t=s.getItem('wt-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');d.setAttribute('data-theme',t);d.setAttribute('data-bs-theme',t);if(s.getItem('wt-dir')==='rtl'){d.setAttribute('dir','rtl');var b=document.getElementById('bootstrap-css');if(b){b.href=b.href.replace('bootstrap.min.css','bootstrap.rtl.min.css');}}if(s.getItem('wt-sidebar')==='collapsed'){d.classList.add('sidebar-collapsed');}}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="dash">
+  <!-- ============================== SIDEBAR ============================== -->
+  <aside class="dash-sidebar" id="dash-sidebar" aria-label="Dashboard navigation">
+    <div class="dash-brand">
+      <a href="dashboard.html" class="brand-full"><img class="logo-light" src="../../assets/images/logo-light.png" width="760" height="479" alt="Everbloom Weddings home"><img class="logo-dark" src="../../assets/images/logo-dark.png" width="760" height="479" alt="Everbloom Weddings home"></a>
+      <a href="dashboard.html" class="brand-mark-link" aria-label="Dashboard overview"><img class="brand-mark" src="../../assets/images/favicon.svg" width="36" height="36" alt=""></a>
+      <button type="button" class="icon-btn dash-close d-lg-none" aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+    </div>
+    <nav aria-label="Dashboard">
+      <p class="dash-nav-label">Planning</p>
+      <ul class="dash-nav"><li><a href="dashboard.html" aria-current="page" title="Overview"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span>Overview</span></a></li><li><a href="checklist.html" title="Checklist"><i class="bi bi-list-check" aria-hidden="true"></i><span>Checklist</span></a></li><li><a href="vendors.html" title="Vendors"><i class="bi bi-shop" aria-hidden="true"></i><span>Vendors</span></a></li><li><a href="decor.html" title="Decor"><i class="bi bi-palette" aria-hidden="true"></i><span>Decor</span></a></li><li><a href="budget.html" title="Budget"><i class="bi bi-pie-chart" aria-hidden="true"></i><span>Budget</span></a></li><li><a href="payments.html" title="Payments"><i class="bi bi-credit-card" aria-hidden="true"></i><span>Payments</span></a></li><li><a href="messages.html" title="Messages"><i class="bi bi-chat-heart" aria-hidden="true"></i><span>Messages</span></a></li><li><a href="documents.html" title="Documents"><i class="bi bi-folder2-open" aria-hidden="true"></i><span>Documents</span></a></li><li><a href="settings.html" title="Settings"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul>
+    </nav>
+    <div class="dash-sidebar-foot">
+      <ul class="dash-nav p-0">
+        <li><a href="../index.html" title="Back to website"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span>Back to website</span></a></li>
+        <li><a href="../login.html" title="Log out"><i class="bi bi-box-arrow-right" aria-hidden="true"></i><span>Log out</span></a></li>
+      </ul>
+    </div>
+  </aside>
+  <div class="dash-backdrop" id="dash-backdrop" hidden></div>
+
+  <div class="dash-main">
+    <!-- ============================== TOP BAR ============================== -->
+    <header class="dash-topbar">
+      <button type="button" class="icon-btn js-sidebar-toggle" aria-controls="dash-sidebar" aria-expanded="true" aria-label="Collapse navigation"><i class="bi bi-layout-sidebar-inset" aria-hidden="true"></i></button>
+      <h1>Overview</h1>
+      <div class="dash-tools">
+        <button type="button" class="icon-btn js-theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i><span class="tool-label">Dark mode</span></button>
+        <button type="button" class="icon-btn hide-sm js-dir-toggle" aria-pressed="false" aria-label="Switch to right-to-left layout"><i class="bi bi-translate" aria-hidden="true"></i><span class="tool-label">RTL layout</span></button>
+        <div class="dropdown">
+          <button type="button" class="icon-btn position-relative" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications, 3 unread">
+            <i class="bi bi-bell" aria-hidden="true"></i><span class="notif-dot"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <!-- TODO: dummy notifications -->
+            <p class="dropdown-header">Notifications</p>
+            <a class="dropdown-item" href="payments.html"><i class="bi bi-credit-card text-primary-brand" aria-hidden="true"></i>Installment 3 is due on 15 Dec</a>
+            <a class="dropdown-item" href="decor.html"><i class="bi bi-palette text-primary-brand" aria-hidden="true"></i>New stage concept ready to review</a>
+            <a class="dropdown-item" href="messages.html"><i class="bi bi-chat-heart text-primary-brand" aria-hidden="true"></i>Your planner sent a message</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="messages.html#notifications">View all notifications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="profile-btn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu for Aisha and Rohan">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=120&amp;q=70" width="80" height="80" alt="" class="avatar" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/portrait-04.jpg'"><span class="profile-name">Aisha &amp; Rohan</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="settings.html"><i class="bi bi-person" aria-hidden="true"></i>Profile &amp; settings</a>
+            <a class="dropdown-item" href="documents.html"><i class="bi bi-folder2-open" aria-hidden="true"></i>Documents</a>
+            <a class="dropdown-item" href="../index.html"><i class="bi bi-house" aria-hidden="true"></i>Visit website</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="../login.html"><i class="bi bi-box-arrow-right" aria-hidden="true"></i>Log out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="dash-content" tabindex="-1">
+      <!-- NOTE: all figures, names and dates below are DUMMY DATA. TODO: load from your backend. -->
+
+      <div class="dash-grid">
+        <section class="card-box no-hover welcome-card" aria-labelledby="welcome-title">
+          <div class="row g-4 align-items-center">
+            <div class="col-xl-5">
+              <p class="eyebrow" style="color:#f2dcb4">Wedding countdown</p>
+              <h2 id="welcome-title" class="h3">Welcome back, Aisha &amp; Rohan</h2>
+              <p class="mb-0">Saturday 20 March 2027 · Heritage palace, Jaipur · XXX guests</p>
+            </div>
+            <div class="col-xl-7">
+              <!-- TODO: wedding date from your backend -->
+              <div class="countdown" data-countdown="2027-03-20T17:00:00" aria-hidden="true">
+                <div class="countdown-cell"><strong data-unit="days">00</strong><span>Days</span></div>
+                <div class="countdown-cell"><strong data-unit="hours">00</strong><span>Hours</span></div>
+                <div class="countdown-cell"><strong data-unit="minutes">00</strong><span>Minutes</span></div>
+                <div class="countdown-cell"><strong data-unit="seconds">00</strong><span>Seconds</span></div>
+              </div>
+              <p class="visually-hidden countdown-summary">Wedding on 20 March 2027.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="dash-grid kpis">
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle "><i class="bi bi-wallet2" aria-hidden="true"></i></span><div><p class="kpi-label">Total budget</p><p class="kpi-value">$48,000</p></div></div></div>
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle is-sage"><i class="bi bi-receipt" aria-hidden="true"></i></span><div><p class="kpi-label">Spent so far</p><p class="kpi-value">$25,350</p></div></div></div>
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle is-gold"><i class="bi bi-piggy-bank" aria-hidden="true"></i></span><div><p class="kpi-label">Remaining</p><p class="kpi-value">$22,650</p></div></div></div>
+          <div class="card-box no-hover dash-card"><div class="kpi"><span class="icon-circle "><i class="bi bi-calendar-check" aria-hidden="true"></i></span><div><p class="kpi-label">Next payment</p><p class="kpi-value">$6,000</p></div></div></div>
+        </div>
+
+        <div class="dash-grid two">
+          <div class="dash-grid halves">
+            <section class="card-box no-hover dash-card" aria-labelledby="progress-title">
+              <div class="dash-card-head"><h2 id="progress-title">Checklist progress</h2><a class="link-arrow" href="checklist.html">Open <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+              <div class="d-flex flex-wrap align-items-center gap-4">
+                <div class="progress-ring" data-progress="44" role="img" aria-label="Planning checklist 44 percent complete">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52" fill="none" stroke-width="10"/><circle class="ring-fg" cx="60" cy="60" r="52" fill="none" stroke-width="10"/></svg>
+            <div class="ring-label"><strong>44%</strong><span>done</span></div>
+          </div>
+                <ul class="list-plain small d-grid gap-2 flex-grow-1">
+                  <li class="d-flex justify-content-between"><span>12 months</span><span>5 / 5</span></li>
+                  <li class="d-flex justify-content-between"><span>9 months</span><span>4 / 4</span></li>
+                  <li class="d-flex justify-content-between"><span>6 months</span><span>2 / 4</span></li>
+                  <li class="d-flex justify-content-between"><span>3 months</span><span>0 / 4</span></li>
+                </ul>
+              </div>
+            </section>
+            <section class="card-box no-hover dash-card" aria-labelledby="ov-budget-title">
+              <div class="dash-card-head"><h2 id="ov-budget-title">Spend by category</h2><a class="link-arrow" href="budget.html">Details <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+              <div class="chart-box skeleton" style="min-height:240px"><canvas data-chart="doughnut" data-source="#ov-budget-list" aria-label="Doughnut chart of spending by category; values listed below" role="img"></canvas><p class="chart-fallback" hidden>Charts could not load. The figures are listed below.</p></div>
+              <ul class="list-rows list-plain small mt-3" id="ov-budget-list"><li data-category="Venue" data-actual="12000" data-planned="12000"><span>Venue</span><strong class="ms-auto">$12,000</strong></li><li data-category="Catering" data-actual="6500" data-planned="14000"><span>Catering</span><strong class="ms-auto">$6,500</strong></li><li data-category="Decor &amp; florals" data-actual="2400" data-planned="8000"><span>Decor &amp; florals</span><strong class="ms-auto">$2,400</strong></li><li data-category="Photography &amp; film" data-actual="1500" data-planned="5000"><span>Photography &amp; film</span><strong class="ms-auto">$1,500</strong></li><li data-category="Attire &amp; beauty" data-actual="1800" data-planned="4000"><span>Attire &amp; beauty</span><strong class="ms-auto">$1,800</strong></li><li data-category="Entertainment" data-actual="800" data-planned="2500"><span>Entertainment</span><strong class="ms-auto">$800</strong></li></ul>
+            </section>
+          </div>
+          <section class="card-box no-hover dash-card" aria-labelledby="pay-title">
+            <div class="dash-card-head"><h2 id="pay-title">Next payment due</h2><span class="badge-soft badge-status is-warning"><i class="bi bi-hourglass-split" aria-hidden="true"></i>Due</span></div>
+            <p class="kpi-value mb-1">$6,000</p>
+            <p class="text-muted">Installment 3 of 4 · due 15 December 2026</p>
+            <a class="btn btn-block mb-4" href="payments.html">View payments</a>
+            <h3 class="h5">Upcoming appointments</h3>
+            <ul class="list-rows list-plain">
+              <li><span class="date-chip"><strong>24</strong><span>Nov</span></span><div><p class="title">Florist tasting &amp; mock-up</p><p class="meta">11:00 · Studio workshop</p></div></li>
+              <li><span class="date-chip"><strong>02</strong><span>Dec</span></span><div><p class="title">Menu tasting with caterer</p><p class="meta">18:30 · Caterer kitchen</p></div></li>
+              <li><span class="date-chip"><strong>10</strong><span>Jan</span></span><div><p class="title">Venue walkthrough</p><p class="meta">10:00 · Heritage palace</p></div></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="dash-grid two">
+          <section class="card-box no-hover dash-card" aria-labelledby="recent-title">
+            <div class="dash-card-head"><h2 id="recent-title">Recent messages</h2><a class="link-arrow" href="messages.html">All messages <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+            <ul class="list-rows list-plain">
+              <li><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=120&amp;q=70" width="80" height="80" alt="Your planner" class="avatar" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/portrait-02.jpg'"><div><p class="title">Your planner</p><p class="meta">The florist has sent two bouquet options — have a look in Decor.</p></div></li>
+              <li><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;w=120&amp;q=70" width="80" height="80" alt="Decor designer" class="avatar" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/portrait-03.jpg'"><div><p class="title">Decor designer</p><p class="meta">Stage concept v2 is ready, with the softer lighting you asked for.</p></div></li>
+            </ul>
+          </section>
+          <section class="card-box no-hover dash-card" aria-labelledby="qa-title">
+            <div class="dash-card-head"><h2 id="qa-title">Quick actions</h2></div>
+            <div class="quick-actions">
+              <a href="checklist.html#add-task"><i class="bi bi-plus-circle" aria-hidden="true"></i>Add a task</a>
+              <a href="decor.html"><i class="bi bi-palette" aria-hidden="true"></i>Review decor</a>
+              <a href="payments.html"><i class="bi bi-credit-card" aria-hidden="true"></i>Make a payment</a>
+              <a href="messages.html"><i class="bi bi-chat-heart" aria-hidden="true"></i>Message planner</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="dash-footer">
+      <span>&copy; <span data-year>2026</span> Everbloom Weddings · Client dashboard (demo data)</span>
+      <span>Need help? <a href="messages.html">Message your planner</a></span>
+    </footer>
+  </div>
+</div>
+<p class="visually-hidden" id="dash-live" aria-live="polite"></p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="../../assets/js/main.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+<script src="../../assets/js/dashboard.js" defer></script>
+</body>
+</html>

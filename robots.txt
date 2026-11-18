@@ -1,0 +1,8 @@
+# robots.txt — Wedding Template
+# TODO: replace https://www.example.com with your domain.
+User-agent: *
+Allow: /
+Disallow: /pages/dashboard/
+Disallow: /documentation/
+
+Sitemap: https://www.example.com/sitemap.xml

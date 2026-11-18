@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planning Checklist | Client Dashboard</title>
+  <meta name="description" content="Your wedding planning checklist grouped by timeline, from twelve months out to wedding week. Tick tasks off, add new ones and filter pending or done items.">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- TODO: replace https://www.example.com with your domain in canonical, Open Graph and JSON-LD -->
+  <link rel="canonical" href="https://www.example.com/pages/dashboard/checklist.html">
+  <meta name="theme-color" content="#9b4d5e">
+  <meta name="author" content="Everbloom Weddings">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Everbloom Weddings">
+  <meta property="og:title" content="Planning Checklist | Client Dashboard">
+  <meta property="og:description" content="Your wedding planning checklist grouped by timeline, from twelve months out to wedding week. Tick tasks off, add new ones and filter pending or done items.">
+  <meta property="og:url" content="https://www.example.com/pages/dashboard/checklist.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Planning Checklist | Client Dashboard">
+  <meta name="twitter:description" content="Your wedding planning checklist grouped by timeline, from twelve months out to wedding week. Tick tasks off, add new ones and filter pending or done items.">
+  <meta name="twitter:image" content="https://www.example.com/assets/images/og-image.jpg">
+
+  <!-- Favicons (TODO: replace with your own) -->
+  <link rel="icon" href="../../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+  <!-- Performance: preconnect to font, CDN and image hosts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- Fonts: Cormorant Garamond (headings) + Jost (body), loaded once -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Jost:wght@400;500;600&amp;display=swap">
+
+  <!-- Bootstrap 5.3.3 + Bootstrap Icons 1.11.3 (version-pinned). main.js swaps to the RTL build. -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Template styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../../assets/css/rtl.css">
+
+  <!-- Apply saved theme / direction before first paint (prevents flashing) -->
+  <script>(function(){try{var d=document.documentElement,s=localStorage,t=s.getItem('wt-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');d.setAttribute('data-theme',t);d.setAttribute('data-bs-theme',t);if(s.getItem('wt-dir')==='rtl'){d.setAttribute('dir','rtl');var b=document.getElementById('bootstrap-css');if(b){b.href=b.href.replace('bootstrap.min.css','bootstrap.rtl.min.css');}}if(s.getItem('wt-sidebar')==='collapsed'){d.classList.add('sidebar-collapsed');}}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="dash">
+  <!-- ============================== SIDEBAR ============================== -->
+  <aside class="dash-sidebar" id="dash-sidebar" aria-label="Dashboard navigation">
+    <div class="dash-brand">
+      <a href="dashboard.html" class="brand-full"><img class="logo-light" src="../../assets/images/logo-light.png" width="760" height="479" alt="Everbloom Weddings home"><img class="logo-dark" src="../../assets/images/logo-dark.png" width="760" height="479" alt="Everbloom Weddings home"></a>
+      <a href="dashboard.html" class="brand-mark-link" aria-label="Dashboard overview"><img class="brand-mark" src="../../assets/images/favicon.svg" width="36" height="36" alt=""></a>
+      <button type="button" class="icon-btn dash-close d-lg-none" aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+    </div>
+    <nav aria-label="Dashboard">
+      <p class="dash-nav-label">Planning</p>
+      <ul class="dash-nav"><li><a href="dashboard.html" title="Overview"><i class="bi bi-grid-1x2" aria-hidden="true"></i><span>Overview</span></a></li><li><a href="checklist.html" aria-current="page" title="Checklist"><i class="bi bi-list-check" aria-hidden="true"></i><span>Checklist</span></a></li><li><a href="vendors.html" title="Vendors"><i class="bi bi-shop" aria-hidden="true"></i><span>Vendors</span></a></li><li><a href="decor.html" title="Decor"><i class="bi bi-palette" aria-hidden="true"></i><span>Decor</span></a></li><li><a href="budget.html" title="Budget"><i class="bi bi-pie-chart" aria-hidden="true"></i><span>Budget</span></a></li><li><a href="payments.html" title="Payments"><i class="bi bi-credit-card" aria-hidden="true"></i><span>Payments</span></a></li><li><a href="messages.html" title="Messages"><i class="bi bi-chat-heart" aria-hidden="true"></i><span>Messages</span></a></li><li><a href="documents.html" title="Documents"><i class="bi bi-folder2-open" aria-hidden="true"></i><span>Documents</span></a></li><li><a href="settings.html" title="Settings"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul>
+    </nav>
+    <div class="dash-sidebar-foot">
+      <ul class="dash-nav p-0">
+        <li><a href="../index.html" title="Back to website"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span>Back to website</span></a></li>
+        <li><a href="../login.html" title="Log out"><i class="bi bi-box-arrow-right" aria-hidden="true"></i><span>Log out</span></a></li>
+      </ul>
+    </div>
+  </aside>
+  <div class="dash-backdrop" id="dash-backdrop" hidden></div>
+
+  <div class="dash-main">
+    <!-- ============================== TOP BAR ============================== -->
+    <header class="dash-topbar">
+      <button type="button" class="icon-btn js-sidebar-toggle" aria-controls="dash-sidebar" aria-expanded="true" aria-label="Collapse navigation"><i class="bi bi-layout-sidebar-inset" aria-hidden="true"></i></button>
+      <h1>Planning checklist</h1>
+      <div class="dash-tools">
+        <button type="button" class="icon-btn js-theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars theme-icon-light" aria-hidden="true"></i><i class="bi bi-sun theme-icon-dark" aria-hidden="true"></i><span class="tool-label">Dark mode</span></button>
+        <button type="button" class="icon-btn hide-sm js-dir-toggle" aria-pressed="false" aria-label="Switch to right-to-left layout"><i class="bi bi-translate" aria-hidden="true"></i><span class="tool-label">RTL layout</span></button>
+        <div class="dropdown">
+          <button type="button" class="icon-btn position-relative" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications, 3 unread">
+            <i class="bi bi-bell" aria-hidden="true"></i><span class="notif-dot"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <!-- TODO: dummy notifications -->
+            <p class="dropdown-header">Notifications</p>
+            <a class="dropdown-item" href="payments.html"><i class="bi bi-credit-card text-primary-brand" aria-hidden="true"></i>Installment 3 is due on 15 Dec</a>
+            <a class="dropdown-item" href="decor.html"><i class="bi bi-palette text-primary-brand" aria-hidden="true"></i>New stage concept ready to review</a>
+            <a class="dropdown-item" href="messages.html"><i class="bi bi-chat-heart text-primary-brand" aria-hidden="true"></i>Your planner sent a message</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="messages.html#notifications">View all notifications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="profile-btn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu for Aisha and Rohan">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=120&amp;q=70" width="80" height="80" alt="" class="avatar" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='../../assets/images/fallback/portrait-04.jpg'"><span class="profile-name">Aisha &amp; Rohan</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="settings.html"><i class="bi bi-person" aria-hidden="true"></i>Profile &amp; settings</a>
+            <a class="dropdown-item" href="documents.html"><i class="bi bi-folder2-open" aria-hidden="true"></i>Documents</a>
+            <a class="dropdown-item" href="../index.html"><i class="bi bi-house" aria-hidden="true"></i>Visit website</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="../login.html"><i class="bi bi-box-arrow-right" aria-hidden="true"></i>Log out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="dash-content" tabindex="-1">
+      <!-- NOTE: all figures, names and dates below are DUMMY DATA. TODO: load from your backend. -->
+
+      <div class="dash-grid two">
+        <div class="js-checklist">
+          <div class="toolbar">
+            <div class="seg js-task-filter" role="group" aria-label="Filter tasks">
+              <button type="button" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" data-filter="pending" aria-pressed="false">Pending</button>
+              <button type="button" data-filter="done" aria-pressed="false">Done</button>
+            </div>
+            <p class="mb-0 small text-muted js-checklist-summary">11 of 25 tasks complete</p>
+          </div>
+          <!-- TODO: dummy tasks — load from your backend -->
+          <section class="card-box no-hover dash-card task-group" id="g12" aria-labelledby="g12-title">
+            <div class="task-group-head">
+              <h2 id="g12-title">12 months to go</h2><span class="task-count">5 of 5 done</span>
+              <div class="progress" role="progressbar" aria-label="12 months to go progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="progress-bar" style="width: 100%"></div></div>
+            </div>
+            <ul class="task-list"><li class="task is-done"><input class="form-check-input" type="checkbox" id="g12-t0" checked><label class="task-title" for="g12-t0">Set the overall budget</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>15 Mar 2026</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g12-t1" checked><label class="task-title" for="g12-t1">Draft the guest list</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>30 Mar 2026</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g12-t2" checked><label class="task-title" for="g12-t2">Book a planner consultation</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>10 Apr 2026</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g12-t3" checked><label class="task-title" for="g12-t3">Shortlist venues</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>30 Apr 2026</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g12-t4" checked><label class="task-title" for="g12-t4">Choose and book the venue</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>20 May 2026</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li></ul>
+          </section>
+          <section class="card-box no-hover dash-card task-group" id="g9" aria-labelledby="g9-title">
+            <div class="task-group-head">
+              <h2 id="g9-title">9 months to go</h2><span class="task-count">4 of 4 done</span>
+              <div class="progress" role="progressbar" aria-label="9 months to go progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="progress-bar" style="width: 100%"></div></div>
+            </div>
+            <ul class="task-list"><li class="task is-done"><input class="form-check-input" type="checkbox" id="g9-t0" checked><label class="task-title" for="g9-t0">Book photographer and film</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>20 Jun 2026</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g9-t1" checked><label class="task-title" for="g9-t1">Book caterer</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>30 Jun 2026</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g9-t2" checked><label class="task-title" for="g9-t2">Approve decor concept</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>15 Jul 2026</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g9-t3" checked><label class="task-title" for="g9-t3">Send save-the-dates</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>30 Jul 2026</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li></ul>
+          </section>
+          <section class="card-box no-hover dash-card task-group" id="g6" aria-labelledby="g6-title">
+            <div class="task-group-head">
+              <h2 id="g6-title">6 months to go</h2><span class="task-count">2 of 4 done</span>
+              <div class="progress" role="progressbar" aria-label="6 months to go progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="progress-bar" style="width: 50%"></div></div>
+            </div>
+            <ul class="task-list"><li class="task is-done"><input class="form-check-input" type="checkbox" id="g6-t0" checked><label class="task-title" for="g6-t0">Book florist</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>15 Sep 2026</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task is-done"><input class="form-check-input" type="checkbox" id="g6-t1" checked><label class="task-title" for="g6-t1">Choose wedding attire</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>30 Sep 2026</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g6-t2"><label class="task-title" for="g6-t2">Book DJ / band</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>15 Oct 2026</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g6-t3"><label class="task-title" for="g6-t3">Book hair &amp; makeup</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>30 Oct 2026</span></span><span><i class="bi bi-shop" aria-hidden="true"></i><span>Vendor</span></span></div></li></ul>
+          </section>
+          <section class="card-box no-hover dash-card task-group" id="g3" aria-labelledby="g3-title">
+            <div class="task-group-head">
+              <h2 id="g3-title">3 months to go</h2><span class="task-count">0 of 4 done</span>
+              <div class="progress" role="progressbar" aria-label="3 months to go progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" style="width: 0%"></div></div>
+            </div>
+            <ul class="task-list"><li class="task"><input class="form-check-input" type="checkbox" id="g3-t0"><label class="task-title" for="g3-t0">Send invitations</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>20 Dec 2026</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g3-t1"><label class="task-title" for="g3-t1">Menu tasting</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>02 Dec 2026</span></span><span><i class="bi bi-shop" aria-hidden="true"></i><span>Vendor</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g3-t2"><label class="task-title" for="g3-t2">Finalise stage &amp; lighting</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>10 Jan 2027</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g3-t3"><label class="task-title" for="g3-t3">Plan guest transport</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>15 Jan 2027</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li></ul>
+          </section>
+          <section class="card-box no-hover dash-card task-group" id="g1" aria-labelledby="g1-title">
+            <div class="task-group-head">
+              <h2 id="g1-title">1 month to go</h2><span class="task-count">0 of 4 done</span>
+              <div class="progress" role="progressbar" aria-label="1 month to go progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" style="width: 0%"></div></div>
+            </div>
+            <ul class="task-list"><li class="task"><input class="form-check-input" type="checkbox" id="g1-t0"><label class="task-title" for="g1-t0">Confirm final guest count</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>20 Feb 2027</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g1-t1"><label class="task-title" for="g1-t1">Seating plan</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>25 Feb 2027</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g1-t2"><label class="task-title" for="g1-t2">Final dress fitting</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>28 Feb 2027</span></span><span><i class="bi bi-shop" aria-hidden="true"></i><span>Vendor</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="g1-t3"><label class="task-title" for="g1-t3">Share run-of-show with vendors</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>01 Mar 2027</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li></ul>
+          </section>
+          <section class="card-box no-hover dash-card task-group" id="gw" aria-labelledby="gw-title">
+            <div class="task-group-head">
+              <h2 id="gw-title">Wedding week</h2><span class="task-count">0 of 4 done</span>
+              <div class="progress" role="progressbar" aria-label="Wedding week progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" style="width: 0%"></div></div>
+            </div>
+            <ul class="task-list"><li class="task"><input class="form-check-input" type="checkbox" id="gw-t0"><label class="task-title" for="gw-t0">Decor setup &amp; walkthrough</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>18 Mar 2027</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="gw-t1"><label class="task-title" for="gw-t1">Rehearsal</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>19 Mar 2027</span></span><span><i class="bi bi-person-badge" aria-hidden="true"></i><span>Planner</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="gw-t2"><label class="task-title" for="gw-t2">Prepare vendor tips &amp; envelopes</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>19 Mar 2027</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li><li class="task"><input class="form-check-input" type="checkbox" id="gw-t3"><label class="task-title" for="gw-t3">Relax and enjoy!</label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span>20 Mar 2027</span></span><span><i class="bi bi-people" aria-hidden="true"></i><span>Couple</span></span></div></li></ul>
+          </section>
+        </div>
+        <div class="d-grid gap-4 align-content-start">
+          <section class="card-box no-hover dash-card text-center" aria-labelledby="overall-title">
+            <h2 id="overall-title" class="h5">Overall progress</h2>
+            <div class="d-flex justify-content-center"><div class="progress-ring" data-progress="44" role="img" aria-label="Planning checklist 44 percent complete">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52" fill="none" stroke-width="10"/><circle class="ring-fg" cx="60" cy="60" r="52" fill="none" stroke-width="10"/></svg>
+            <div class="ring-label"><strong>44%</strong><span>done</span></div>
+          </div></div>
+          </section>
+          <section class="card-box no-hover dash-card" id="add-task" aria-labelledby="add-title">
+            <h2 id="add-title" class="h5">Add a task</h2>
+            <form class="js-add-task" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="new-task-title">Task</label>
+                <input class="form-control" id="new-task-title" type="text" placeholder="e.g. Order welcome signs" aria-describedby="new-task-title-error">
+                <div class="field-error" id="new-task-title-error"></div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="new-task-group">Timeline</label>
+                <select class="form-select" id="new-task-group"><option value="g12">12 months to go</option><option value="g9">9 months to go</option><option value="g6">6 months to go</option><option value="g3">3 months to go</option><option value="g1">1 month to go</option><option value="gw">Wedding week</option></select>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6 col-lg-12 col-xl-6"><label class="form-label" for="new-task-due">Due date</label><input class="form-control" id="new-task-due" type="date"></div>
+                <div class="col-sm-6 col-lg-12 col-xl-6"><label class="form-label" for="new-task-who">Assigned to</label><select class="form-select" id="new-task-who"><option>Couple</option><option>Planner</option><option>Vendor</option></select></div>
+              </div>
+              <button class="btn btn-block" type="submit"><i class="bi bi-plus-lg" aria-hidden="true"></i>Add task</button>
+            </form>
+          </section>
+        </div>
+      </div>
+      <template id="task-template">
+        <li class="task"><input class="form-check-input" type="checkbox"><label class="task-title"></label><div class="task-meta"><span><i class="bi bi-calendar-event" aria-hidden="true"></i><span data-slot="due"></span></span><span><i class="bi bi-person" aria-hidden="true"></i><span data-slot="who"></span></span></div></li>
+      </template>
+    </main>
+    <footer class="dash-footer">
+      <span>&copy; <span data-year>2026</span> Everbloom Weddings · Client dashboard (demo data)</span>
+      <span>Need help? <a href="messages.html">Message your planner</a></span>
+    </footer>
+  </div>
+</div>
+<p class="visually-hidden" id="dash-live" aria-live="polite"></p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/dashboard.js" defer></script>
+</body>
+</html>
