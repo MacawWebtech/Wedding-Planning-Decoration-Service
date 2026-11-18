@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="48" viewBox="0 0 190 48" role="img" aria-label="Everbloom Weddings">
+  <!-- TODO: replace with your logo (dark text, for light backgrounds) -->
+  <g fill="none" stroke="#c9a46a" stroke-width="1.6"><circle cx="18" cy="24" r="11"/><circle cx="30" cy="24" r="11"/></g>
+  <path d="M24 13c3 3 3 7 0 10-3-3-3-7 0-10z" fill="#9b4d5e"/>
+  <text x="50" y="27" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" fill="#2e2428">Everbloom</text>
+  <text x="51" y="41" font-family="Jost, 'Segoe UI', Arial, sans-serif" font-size="8.5" letter-spacing="3.2" fill="#84652f">WEDDINGS</text>
+</svg>

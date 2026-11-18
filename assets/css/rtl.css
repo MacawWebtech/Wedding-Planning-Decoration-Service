@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Wedding Template — RTL fixes
+   Activated by <html dir="rtl">. Most layout uses logical properties
+   (margin-inline, padding-inline, inset-inline), so this file only flips
+   directional icons, transforms and gradients that cannot be logical.
+   main.js also swaps Bootstrap for bootstrap.rtl.min.css.
+   ========================================================================== */
+
+/* 01. Directional icons (arrows, chevrons) */
+[dir="rtl"] .bi-arrow-right,
+[dir="rtl"] .bi-arrow-left,
+[dir="rtl"] .bi-chevron-right,
+[dir="rtl"] .bi-chevron-left,
+[dir="rtl"] .bi-arrow-up-right,
+[dir="rtl"] .bi-box-arrow-right,
+[dir="rtl"] .bi-box-arrow-up-right,
+[dir="rtl"] .bi-send,
+[dir="rtl"] .bi-quote,
+[dir="rtl"] .bi-layout-sidebar-inset { display: inline-block; transform: scaleX(-1); }
+
+/* Hover nudges move the other way */
+[dir="rtl"] .btn:hover .bi-arrow-right { transform: scaleX(-1) translateX(3px); }
+[dir="rtl"] .link-arrow:hover .bi { transform: scaleX(-1) translateX(4px); }
+
+/* 02. Typography — keep Latin fonts, slightly increase line height */
+[dir="rtl"] body { line-height: 1.8; }
+[dir="rtl"] .eyebrow { letter-spacing: 0.08em; }
+
+/* 03. Header dropdown centring uses translate, flip it */
+@media (min-width: 1024px) {
+  [dir="rtl"] .sub-menu { translate: 50% 0; }
+}
+
+/* 04. Timelines & process connectors handled in style.css with [dir] rules */
+
+/* 05. Dashboard sidebar slides in from the right */
+[dir="rtl"] { --sidebar-hide: 100%; }
+
+/* 06. Slider: scroll-snap works natively; JS flips scroll direction */
+
+/* 07. Breadcrumb divider direction */
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before { float: right; padding-left: var(--bs-breadcrumb-item-padding-x); padding-right: 0; }
+
+/* 08. Form selects: arrow on the left */
+[dir="rtl"] .form-select { background-position: left 0.75rem center; padding-left: 2.25rem; padding-right: 1rem; }
+
+/* 09. Dropdowns in dashboard topbar open toward the inline end */
+[dir="rtl"] .dash-tools .dropdown-menu { text-align: right; }
+
+/* 10. Footer hours row */
+[dir="rtl"] .footer-hours li span:last-child { direction: ltr; unicode-bidi: isolate; }
+
+/* 11. Phone numbers and emails stay LTR inside RTL text */
+[dir="rtl"] .ltr-text, [dir="rtl"] a[href^="tel:"], [dir="rtl"] a[href^="mailto:"] { direction: ltr; unicode-bidi: isolate; }
